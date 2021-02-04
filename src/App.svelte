@@ -1,16 +1,27 @@
-<!-- App.svelte -->
 <script>
-  import Rsvp from "./Rsvp.svelte"
-  import {flip} from 'svelte/animate';
-  let x;
-  let click;
-  $: url = x > 765 ? "us_sm" : "us_crop"
+  import navaid from "navaid"
 
-  const rsvp = async () => click = 'rsvp'
-  const options = {};
+  import Accomodations from "./Accommodations.svelte"
+  import More from "./More.svelte"
+  
+  // routing
+  let page
+  let router = navaid()
+  router
+  .on("/", () => {
+    page = "home"
+  })
+  .on("/accommodations", params => {
+    page = "accommodations"
+  })
+  .on("/more", params => {
+    page = "more"
+  })
+
+  router.listen()
 </script>
 <style>
-
+/* 
 .bg-drawing {
   z-index: 0;
 }
@@ -29,6 +40,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 
 
@@ -36,32 +48,40 @@
   .bg-drawing:before {
     background-image: url("climbing.jpg")
   }
-}
+} */
 </style>
 
-<svelte:window bind:outerWidth={x}/>
 <div class="bg-drawing bg-hero-pattern flex flex-col md:flex-row">
-  <!-- <div class="inline-flex md:h-screen ms:w-screen">
-    <img src="/{url}.jpg" alt="us" class="us md:h-full md:w-auto z-50">
-  </div> -->
-  <div class="inline-flex flex-col md:m-9 p-8 flex-grow rounded">
-    <div class="self-center z-20">
-      <h1 class="text-7xl mt-8 mb-2 text-center antialiased">We're getting married!</h1>
-      <div class="p-8 text-xl">
-        <ul>
-          <li><strong>When</strong>: October 16th, 2021</li>
-          <li><strong>Where</strong>: Whiteface Club and Resort, Lake Placid NY</li>
-        </ul>
+  {#if !page || page == "home"}
+    <div class="inline-flex flex-col md:m-9 p-8 flex-grow rounded">
+      <div class="self-center z-20">
+        <h1 class="text-7xl mt-8 mb-2 text-center antialiased">We're getting married!</h1>
+        <div class="text-xl mt-12 max-w-lg m-auto">
+          On October 16th, 2021, at the <a class="underline" href="https://whitefaceclubresort.com/">Whiteface Club</a>
+          in <a class="underline" href="https://www.google.com/maps?q=lake+placid+ny&rlz=1C5GCEM_enUS907US907&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiFub_cms_uAhUQFlkFHREpBZ0Q_AUoAXoECBsQAw">Lake Placid, NY</a>.
+        </div>
+        <div class="text-xl mt-12 max-w-lg m-auto p-4 rounded-lg border-4 border-red-200 border-dashed">
+          We know it might seem foolhardy to plan a wedding in a pandemic, 
+          but we're crossing our fingers and monitoring the situation closely. 
+          We hope we are able to celebrate safely with you all in October!
+        </div>
+        <div class="text-center mt-4">
+        <div class="p-8 text-xl inline-flex flex-col space-y-6">
+          <div class="inline-flex justify-evenly rounded-full py-3 px-6 bg-black text-white font-bold">
+            <a href="/accommodations"> Accommodations </a>
+          </div>
+          <div class="inline-flex justify-evenly rounded-full py-3 px-6 bg-white border-2 border-black font-bold">
+            <a href="/more"> More to come </a>
+          </div>
+        </div>
       </div>
-      <div class="flex flex-col items-center self-center">
-      {#if click == undefined}
-        <a on:click={rsvp} class='flex px-8 py-3 rounded text-center bg-gray-800 text-white text-sm font-bold' href="#">
-          RSVP
-        </a>
-      {:else if click == 'rsvp'}
-        <Rsvp />
-      {/if}
       </div>
     </div>
-  </div>
+
+  {:else if page == "accommodations"}
+    <Accomodations />
+  {:else if page == "more"}
+    <More />
+  {/if}
+
 </div>

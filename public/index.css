@@ -1,7 +1,8 @@
 @import 'tailwindcss/dist/tailwind.css';
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
 h1 {
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Bungee Shade';
   text-shadow: 3px 3px white;
   color: black;
 }
