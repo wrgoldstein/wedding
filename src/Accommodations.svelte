@@ -1,33 +1,36 @@
 
 <style>
+  h1 {
+    hyphens: auto;
+  }
+
   .fixed {
-    position: fixed;
-    top: 2em;
-    left: 2em;
+    top: 1.5em;
+    left: 1.5em;
   }
 </style>
 
 <div class="w-4/5 m-auto">
-  <h1 class="text-7xl m-auto mb-4 mt-6">Accommodations</h1>
-
-  <a href="/">
-    <img class="fixed" width="50px" src="left-arrow.png">
+  <a class="ml-4 underline" href="/">
+    <img class="fixed" width="35px" src="left-arrow.png">
   </a>
-
+  <h1 class="text-4xl break-words sm:text-5xl md:text-6xl mt-10 m-auto mb-4 mt-6">
+    Where to stay?
+  </h1>
   
   <div>
   We'll have hotel blocks at two hotels in Lake Placid (short drive from the venue), and there are also rental properties on the Whiteface Club property and nearby in Lake Placid and the surrounding area.
   </div>
 
 
-  <div class="text-4xl mt-6 mb-6">
+  <div class="text-2xl mt-6 mb-6">
   Transportation
   </div>
   <div>
   We will hopefully be able to have a bus to transport people from "downtown" Lake Placid to the venue before and after the wedding/reception, which should work for those staying in the hotels and nearby.
   </div>
 
-  <div class="text-4xl mt-6 mb-6">
+  <div class="text-2xl mt-6 mb-6">
     Hotel blocks
   </div>
   <div class="space-y-6">
@@ -50,7 +53,7 @@
     </div>
   </div>
 
-  <div class="text-4xl mt-6 mb-6">
+  <div class="text-2xl mt-6 mb-6">
     Rentals
   </div>
   <div>

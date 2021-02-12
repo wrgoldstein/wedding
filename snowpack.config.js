@@ -6,8 +6,12 @@ const proxy = httpProxy.createServer({ target: 'http://localhost:3000' });
 module.exports = {
   routes: [
     {
-      src: '/api/.*',
-      dest: (req, res) => proxy.web(req, res),
+      src: '/accommodations',
+      dest: '/'
+    },
+    {
+      src: '/more',
+      dest: '/'
     },
   ],
   mount: {

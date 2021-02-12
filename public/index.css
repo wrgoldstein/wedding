@@ -1,8 +1,17 @@
 @import 'tailwindcss/dist/tailwind.css';
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Raleway:wght@100;300;600&display=swap');
 
 h1 {
   font-family: 'Bungee Shade';
   text-shadow: 3px 3px white;
   color: black;
+}
+
+h2 {
+  font-family: 'Raleway';
+  font-weight: 100;
+}
+
+.raleway-100 {
+  font-family: 'Raleway';
 }

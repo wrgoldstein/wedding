@@ -1,9 +1,19 @@
 <script>
   import navaid from "navaid"
-
+  import { onMount } from "svelte"
   import Accomodations from "./Accommodations.svelte"
   import More from "./More.svelte"
   
+  // color flashing
+  let shadow = 'shadow-white'
+  let transition = {
+    'shadow-white': 'shadow-blue',
+    'shadow-blue': 'shadow-red',
+    'shadow-red': 'shadow-green',
+    'shadow-green': 'shadow-yellow',
+    'shadow-yellow': 'shadow-white',
+  }
+
   // routing
   let page
   let router = navaid()
@@ -19,6 +29,12 @@
   })
 
   router.listen()
+
+  onMount(() => {
+    setInterval(() => {
+      shadow = transition[shadow]
+    }, 800)
+  })
 </script>
 <style>
 /* 
@@ -49,13 +65,31 @@
     background-image: url("climbing.jpg")
   }
 } */
+.shadow-white {
+  text-shadow: 3px 3px white;
+}
+
+.shadow-red {
+  text-shadow: 3px 3px red;
+}
+
+.shadow-green {
+  text-shadow: 3px 3px green;
+}
+.shadow-yellow {
+  text-shadow: 3px 3px yellow;
+}
+.shadow-blue {
+  text-shadow: 3px 3px blue;
+}
+
 </style>
 
 <div class="bg-drawing bg-hero-pattern flex flex-col md:flex-row">
   {#if !page || page == "home"}
     <div class="inline-flex flex-col md:m-9 p-8 flex-grow rounded">
       <div class="self-center z-20">
-        <h1 class="text-7xl mt-8 mb-2 text-center antialiased">We're getting married!</h1>
+        <h1 class="{shadow} text-4xl md:text-7xl mt-8 mb-2 text-center antialiased">We're getting married!</h1>
         <div class="text-xl mt-12 max-w-lg m-auto">
           On October 16th, 2021, at the <a class="underline" href="https://whitefaceclubresort.com/">Whiteface Club</a>
           in <a class="underline" href="https://www.google.com/maps?q=lake+placid+ny&rlz=1C5GCEM_enUS907US907&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiFub_cms_uAhUQFlkFHREpBZ0Q_AUoAXoECBsQAw">Lake Placid, NY</a>.
