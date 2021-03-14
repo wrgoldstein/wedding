@@ -1,3 +1,11 @@
+<script>
+  import  { onMount } from "svelte"
+
+  onMount(() => {
+    window.scrollTo(0,0)
+  })
+
+</script>>
 <div class="w-4/5 m-auto">
   <a class="ml-4 underline" href="/">
     <img class="fixed" width="35px" src="left-arrow.png" />
