@@ -1,5 +1,5 @@
 <div class="w-4/5 m-auto">
-  <h1 class="text-7xl m-auto mb-4 mt-6">Photos</h1>
+  <h1 class="text-6xl m-auto mb-4 mt-6">Photos</h1>
 
   <div class="inline">
     <img src="us.jpg" class="inline opacity-90 w-1/3"  style="width: 382px;"/>
