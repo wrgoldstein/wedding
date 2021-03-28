@@ -33,61 +33,33 @@
   onMount(() => {
     setInterval(() => {
       shadow = transition[shadow]
-    }, 800)
+    }, 500)
   })
 </script>
 <style>
-/* 
-.bg-drawing {
-  z-index: 0;
-}
-
-.bg-drawing:before {
-  background-image: url("us-ftgreen-full.jpg");
-  z-index: 1;
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  content: '';
-  opacity: .55;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-
-@media only screen and (max-width: 600px) {
-  .bg-drawing:before {
-    background-image: url("climbing.jpg")
-  }
-} */
 .shadow-white {
-  text-shadow: 3px 3px white;
+  text-shadow: 3px 3px grey;
 }
 
 .shadow-red {
-  text-shadow: 3px 3px red;
+  text-shadow: 3px 3px #a7371b;
 }
 
 .shadow-green {
-  text-shadow: 3px 3px green;
+  text-shadow: 3px 3px #187150;
 }
 .shadow-yellow {
-  text-shadow: 3px 3px yellow;
+  text-shadow: 3px 3px #a79c06;
 }
 .shadow-blue {
-  text-shadow: 3px 3px blue;
+  text-shadow: 3px 3px #293c6a;
 }
 
 </style>
 <div class="bg-drawing bg-hero-pattern flex flex-col md:flex-col">
   {#if !page || page == "home"}
     <div class="justify-evenly self-center md:mt-4">
-      <img src="us-crop.jpg" class="opacity-90"/>
+      <img src="couch.jpg" class="opacity-90 w-2/3 m-auto"/>
     </div>
     <div class="inline-flex flex-col p-8 flex-grow rounded">
       <div class="self-center z-20">

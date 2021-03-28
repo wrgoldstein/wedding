@@ -1,19 +1,18 @@
 <script>
-  import  { onMount } from "svelte"
+  import { onMount } from "svelte";
 
   onMount(() => {
-    window.scrollTo(0,0)
-  })
-
-</script>>
+    window.scrollTo(0, 0);
+  });
+</script>
 <div class="w-4/5 m-auto">
-  <a class="ml-4 underline" href="/">
+  <a class="ml-4 mt-4 underline" href="/">
     <img class="fixed" width="35px" src="left-arrow.png" />
   </a>
   <h1
     class="text-4xl break-words sm:text-5xl md:text-6xl mt-10 m-auto mb-4 mt-6"
   >
-    Where to stay?
+    save the date
   </h1>
 
   <div class="text-2xl mt-6 mb-6">Hotel blocks</div>
@@ -59,9 +58,8 @@
   <div>
     The Whiteface Club has housing on the property, which you can find by
     searching for "Whiteface Club" on VRBO, Airbnb, or directly via the
-    Whiteface Club website.
-
-    You can also find Airbnbs in Lake Placid or the surrounding area.
+    Whiteface Club website. You can also find Airbnbs in Lake Placid or the
+    surrounding area.
   </div>
 
   <div class="text-2xl mt-6 mb-6">Transportation</div>
@@ -71,14 +69,21 @@
     those staying in the hotels and nearby. Details to come.
   </div>
   <div class="mt-6">
-    Lake Placid is about 4½ hours from NYC or Boston, or 2½ from Albany, NY if you wish to fly in.
+    Lake Placid is about 4½ hours from NYC or Boston, or 2½ from Albany, NY if
+    you wish to fly in.
   </div>
   <div class="text-2xl mt-6 mb-6">Venue</div>
   <div class="mt-6">
     <ul>
       <li>Address: 373 Whiteface Inn Lane, Lake Placid, NY 12946.</li>
       <li>Telephone: 518.523.2551</li>
-      <li>Website: <a class="text-blue-600" href="https://whitefaceclubresort.com/">https://whitefaceclubresort.com/</a></li>
+      <li>
+        Website: <a
+          class="text-blue-600"
+          href="https://whitefaceclubresort.com/"
+          >https://whitefaceclubresort.com/</a
+        >
+      </li>
     </ul>
   </div>
   <h1
@@ -87,15 +92,17 @@
     Schedule
   </h1>
   <div class="mt-6 mb-32">
-    
-
     <p class="mt-4 mb-4">Our rough schedule for the weekend is:</p>
     <div>
       <ul class="list-disc">
-          <li>Friday evening: welcome drinks (location tbd)</li>
-          <li>Saturday morning: free! (There's tons to do in the area, see below)</li>
-          <li>Saturday afternoon through evening: wedding ceremony + reception</li>
-          <li>Sunday morning: light breakfast and goodbyes</li>
+        <li>Friday evening: welcome drinks (location tbd)</li>
+        <li>
+          Saturday morning: free! (There's tons to do in the area, see below)
+        </li>
+        <li>
+          Saturday afternoon through evening: wedding ceremony + reception
+        </li>
+        <li>Sunday morning: light breakfast and goodbyes</li>
       </ul>
     </div>
   </div>
