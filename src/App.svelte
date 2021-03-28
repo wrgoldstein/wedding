@@ -33,26 +33,26 @@
   onMount(() => {
     setInterval(() => {
       shadow = transition[shadow]
-    }, 500)
+    }, 800)
   })
 </script>
 <style>
 .shadow-white {
-  text-shadow: 3px 3px grey;
+  color: grey;
 }
 
 .shadow-red {
-  text-shadow: 3px 3px #a7371b;
+  color: #a7371b;
 }
 
 .shadow-green {
-  text-shadow: 3px 3px #187150;
+  color: #187150;
 }
 .shadow-yellow {
-  text-shadow: 3px 3px #a79c06;
+  color: #a79c06;
 }
 .shadow-blue {
-  text-shadow: 3px 3px #293c6a;
+  color: #293c6a;
 }
 
 </style>
