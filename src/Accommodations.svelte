@@ -12,7 +12,7 @@
   <h1
     class="text-4xl break-words sm:text-5xl md:text-6xl mt-10 m-auto mb-4 mt-6"
   >
-    save the date
+    Info
   </h1>
 
   <div class="text-2xl mt-6 mb-6">Hotel blocks</div>
