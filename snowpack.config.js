@@ -5,12 +5,17 @@ const proxy = httpProxy.createServer({ target: 'http://localhost:3000' });
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   routes: [
+    // These redirects to the home page allow for permalinks
     {
-      src: '/accommodations',
+      src: '/info',
       dest: '/'
     },
     {
-      src: '/more',
+      src: '/photos',
+      dest: '/'
+    },
+    {
+      src: '/registry',
       dest: '/'
     },
   ],

@@ -1,8 +1,9 @@
 <script>
   import navaid from "navaid"
   import { onMount } from "svelte"
-  import Accomodations from "./Accommodations.svelte"
-  import More from "./More.svelte"
+  import Info from "./Info.svelte"
+  import Registry from "./Registry.svelte"
+  import Photos from "./Photos.svelte"
   
   // color flashing
   let shadow = 'shadow-white'
@@ -21,11 +22,14 @@
   .on("/", () => {
     page = "home"
   })
-  .on("/accommodations", params => {
-    page = "accommodations"
+  .on("/info", params => {
+    page = "info"
   })
   .on("/more", params => {
     page = "more"
+  })
+  .on("/registry", params => {
+    page = "registry"
   })
 
   router.listen()
@@ -74,23 +78,38 @@
           We hope we are able to celebrate safely with you all in October!
         </div>
         <div class="text-center mt-4">
-        <div class="p-8 text-xl inline-flex flex-col space-y-6">
-          <p class="mb-2">Registry and RSVP coming soon.</p>
-          <div class="inline-flex justify-evenly rounded-full py-3 px-6 bg-black text-white font-bold">
-            <a href="/accommodations"> Info </a>
-          </div>
-          <div class="inline-flex justify-evenly rounded-full py-3 px-6 bg-white border-2 border-black font-bold">
-            <a href="/more"> Photos </a>
-          </div>
+        <div class="p-8 text-xl inline-flex flex-col space-y-6 w-80 items-center items-stretch">
+          <a href="https://forms.gle/V6EJDn4qD1ZTj4ZW6">
+            <div class="inline-flex justify-evenly rounded-full py-3 px-6 bg-black w-60 text-white font-bold">
+              RSVP
+            </div>
+          </a>
+          <a href="/info">
+            <div class="inline-flex justify-evenly rounded-full py-3 px-6 bg-white w-60 border-2 border-black font-bold">
+              Info
+            </div>
+          </a>
+          <a href="/registry">
+            <div class="inline-flex justify-evenly rounded-full py-3 px-6 bg-white w-60 border-2 border-black font-bold">
+              Registry
+            </div>
+          </a>
+          <a href="/photos">
+            <div class="inline-flex justify-evenly rounded-full py-3 px-6 bg-white w-60 border-2 border-black font-bold">
+              Photos
+            </div>
+          </a>
         </div>
       </div>
       </div>
     </div>
 
-  {:else if page == "accommodations"}
-    <Accomodations />
-  {:else if page == "more"}
-    <More />
+  {:else if page == "info"}
+    <Info />
+  {:else if page == "photos"}
+    <Photos />
+  {:else if page == "registry"}
+    <Registry />
   {/if}
 
 </div>

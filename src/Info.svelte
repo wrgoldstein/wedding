@@ -95,14 +95,11 @@
     <p class="mt-4 mb-4">Our rough schedule for the weekend is:</p>
     <div>
       <ul class="list-disc">
-        <li>Friday evening: welcome drinks (location tbd)</li>
+        <li>Friday evening: Welcome drinks @ Smoke Signals on Mirror Lake</li>
         <li>
-          Saturday morning: free! (There's tons to do in the area, see below)
+          Saturday afternoon through evening: Wedding ceremony & Reception @ Whiteface Club
         </li>
-        <li>
-          Saturday afternoon through evening: wedding ceremony + reception
-        </li>
-        <li>Sunday morning: light breakfast and goodbyes</li>
+        <li>Sunday morning: Brunch @ Whiteface Club</li>
       </ul>
     </div>
   </div>
