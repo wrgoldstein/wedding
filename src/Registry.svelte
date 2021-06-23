@@ -29,7 +29,7 @@
     Don't feel like you need to get us a gift! But if you'd like to, here are a few things we have our eyes on:
   </div>
   <ul class="mt-4 list-disc">
-    <a class="underline" href="https://eastfork.com/apps/giftregistry/registry/138336?rsid=1"><li>East Fork (Dinnerware)</li></a>
+    <a class="underline" href="https://eastfork.com/apps/giftregistry/registry/138698"><li>East Fork (Dinnerware)</li></a>
     <a class="underline" href="https://www.frontgate.com/gr/11161081?view=list&sortByTopFive=&description=&sortBy=&printPreview=&prevSortBy="><li>Frontgate (Towels)</li></a>
     <a class="underline" href="https://www.zola.com/registry/weirstein"><li>Zola (Other things!)</li></a>
   </ul>
