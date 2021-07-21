@@ -31,6 +31,9 @@
   .on("/registry", params => {
     page = "registry"
   })
+  .on("/photos", params => {
+    page = "photos"
+  })
 
   router.listen()
 
