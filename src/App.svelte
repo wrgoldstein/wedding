@@ -82,7 +82,7 @@
         </div>
         <div class="text-center mt-4">
         <div class="p-8 text-xl inline-flex flex-col space-y-6 w-80 items-center items-stretch">
-          <a href="https://forms.gle/V6EJDn4qD1ZTj4ZW6">
+          <a href="https://forms.gle/V6EJDn4qD1ZTj4ZW6" target="_blank">
             <div class="inline-flex justify-evenly rounded-full py-3 px-6 bg-black w-60 text-white font-bold">
               RSVP
             </div>
