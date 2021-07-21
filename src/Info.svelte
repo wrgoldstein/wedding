@@ -97,7 +97,11 @@
       <ul class="list-disc">
         <li>Friday evening: Welcome drinks @ Smoke Signals on Mirror Lake</li>
         <li>
-          Saturday afternoon through evening: Wedding ceremony & Reception @ Whiteface Club
+          Saturday: 
+            <ul>
+              <li>Wedding ceremony at 3PM</li>
+              <li>Reception afterwards @ Whiteface Club</li>
+            </ul>
         </li>
         <li>Sunday morning: Brunch @ Whiteface Club</li>
       </ul>
