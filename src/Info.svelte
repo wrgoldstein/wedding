@@ -1,10 +1,18 @@
 <script>
   import { onMount } from "svelte";
 
+  let emoji = '🕺'
+
+  function randomizeDancer(){
+    emoji = emoji == '🕺' ? '💃' : '🕺'
+  }
+
   onMount(() => {
     window.scrollTo(0, 0);
+    setInterval(randomizeDancer, 1000);
   });
 </script>
+
 <div class="w-4/5 m-auto">
   <a class="ml-4 mt-4 underline" href="/">
     <img class="fixed" width="35px" src="left-arrow.png" />
@@ -15,7 +23,7 @@
     Info
   </h1>
 
-  <div class="text-2xl mt-6 mb-6">Hotel blocks</div>
+  <div class="text-2xl mt-6 mb-2">Hotel blocks</div>
   <div class="space-y-6">
     <div>
       <strong>Mirror Lake Inn</strong> (<a
@@ -54,7 +62,7 @@
     </div>
   </div>
 
-  <div class="text-2xl mt-6 mb-6">Rentals</div>
+  <div class="text-2xl mt-6 mb-2">Rentals</div>
   <div>
     The Whiteface Club has housing on the property, which you can find by
     searching for "Whiteface Club" on VRBO, Airbnb, or directly via the
@@ -62,17 +70,15 @@
     surrounding area.
   </div>
 
-  <div class="text-2xl mt-6 mb-6">Transportation</div>
-  <div class="mt-6">
-    We're planning to have a bus to transport people from "downtown" Lake Placid
-    to the venue before and after the wedding reception, which should work for
-    those staying in the hotels and nearby. Details to come.
+  <div class="text-2xl mt-6 mb-2">Transportation</div>
+  <div>
+    A bus will pick up from the Golden Arrow and Mirror Lake Inn before the ceremony and shuttle back and forth throughout the reception. The last shuttle will leave the Whiteface Club at 10:30pm. You don't have to be staying at the hotels to be picked up or dropped off there!
   </div>
   <div class="mt-6">
     Lake Placid is about 4½ hours from NYC or Boston, or 2½ from Albany, NY if
     you wish to fly in.
   </div>
-  <div class="text-2xl mt-6 mb-6">Venue</div>
+  <div class="text-2xl mt-6 mb-2">Venue</div>
   <div class="mt-6">
     <ul>
       <li>Address: 373 Whiteface Inn Lane, Lake Placid, NY 12946.</li>
@@ -92,24 +98,34 @@
     Schedule
   </h1>
   <div class="mt-6 mb-32">
-    <p class="mt-4 mb-4">Our rough schedule for the weekend is:</p>
     <div>
-      <ul class="list-disc">
-        <li>Friday evening: Welcome drinks @ Smoke Signals on Mirror Lake</li>
-        <li>
-          Saturday: 
-            <ul>
-              <li>Wedding ceremony at 3PM</li>
-              <li>Reception afterwards @ Whiteface Club</li>
-            </ul>
-        </li>
-        <li>Sunday morning: Brunch @ Whiteface Club</li>
-      </ul>
+      <div class="text-2xl mt-6 mb-2">Friday</div>
+        At Smoke Signals on Mirror Lake:
+        <ul class="list-disc">
+          <li>7-10PM - Welcome drinks</li>
+        </ul>
+        
+        <div class="text-2xl mt-6 mb-2">Saturday</div>
+          At the Whiteface Club:
+          <ul class="list-disc">
+            <li>3:00PM - Wedding ceremony</li>
+            <li>3:45PM - Cocktail hour</li>
+            <li>5-11PM - Dinner reception and dancing {emoji}</li>
+          </ul>
+          <div class="text-2xl mt-6 mb-2">Sunday</div> 
+          At the Whiteface Club:
+          <ul class="list-disc">
+            <li>9-11AM: Brunch</li>
+          </ul>
     </div>
   </div>
 </div>
 
 <style>
+  .foo {
+    font-size: 2em;
+  }
+
   h1 {
     hyphens: auto;
   }
