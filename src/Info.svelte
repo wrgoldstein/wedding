@@ -100,22 +100,24 @@
   <div class="mt-6 mb-32">
     <div>
       <div class="text-2xl mt-6 mb-2">Friday</div>
-        At Smoke Signals on Mirror Lake:
-        <ul class="list-disc">
+        At <b>Smoke Signals</b> on Mirror Lake (2489 Main St, Lake Placid, NY 12946):
+        <ul class="list-disc list-inside">
           <li>7-10PM - Welcome drinks</li>
+          <i>Dress code: Casual</i>
         </ul>
         
         <div class="text-2xl mt-6 mb-2">Saturday</div>
-          At the Whiteface Club:
-          <ul class="list-disc">
-            <li>3:00PM - Wedding ceremony</li>
+          At the <b>Whiteface Club</b> (373 Whiteface Inn Lane, Lake Placid, NY 12946):
+          <ul class="list-disc list-inside">
+            <li>3:00PM - Wedding ceremony <span class="aside">(Outside, weather permitting)</span></li>
             <li>3:45PM - Cocktail hour</li>
             <li>5-11PM - Dinner reception and dancing {emoji}</li>
+            <i>Dress code: Semi-formal</i>
           </ul>
           <div class="text-2xl mt-6 mb-2">Sunday</div> 
-          At the Whiteface Club:
-          <ul class="list-disc">
-            <li>9-11AM: Brunch</li>
+          At the <b>Whiteface Club</b> (373 Whiteface Inn Lane, Lake Placid, NY 12946):
+          <ul class="list-disc list-inside">
+            <li>9-11AM (drop-in): Brunch</li>
           </ul>
     </div>
   </div>
